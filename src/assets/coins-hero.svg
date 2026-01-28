@@ -1,0 +1,64 @@
+<svg width="920" height="420" viewBox="0 0 920 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gGold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 150) rotate(35) scale(260 210)">
+      <stop stop-color="#FDE68A" stop-opacity="0.95"/>
+      <stop offset="0.45" stop-color="#FBBF24" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0.0"/>
+    </radialGradient>
+    <radialGradient id="gSilver" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(620 190) rotate(-15) scale(280 220)">
+      <stop stop-color="#E5E7EB" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#93C5FD" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1D4ED8" stop-opacity="0.0"/>
+    </radialGradient>
+    <linearGradient id="coinGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="45%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="coinSilver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9FAFB"/>
+      <stop offset="55%" stop-color="#D1D5DB"/>
+      <stop offset="100%" stop-color="#6B7280"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 .35 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="420" fill="url(#gGold)"/>
+  <rect width="920" height="420" fill="url(#gSilver)"/>
+
+  <!-- Gold coins -->
+  <g filter="url(#softGlow)" opacity="0.95">
+    <circle cx="260" cy="190" r="84" fill="url(#coinGold)"/>
+    <circle cx="260" cy="190" r="70" fill="none" stroke="#111827" stroke-opacity="0.25" stroke-width="6"/>
+    <path d="M232 198c18 14 56 14 74 0" stroke="#111827" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+    <path d="M238 176c10-18 46-18 56 0" stroke="#111827" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#softGlow)" opacity="0.8">
+    <circle cx="360" cy="245" r="58" fill="url(#coinGold)"/>
+    <circle cx="360" cy="245" r="48" fill="none" stroke="#111827" stroke-opacity="0.22" stroke-width="5"/>
+  </g>
+
+  <!-- Silver coins -->
+  <g filter="url(#softGlow)" opacity="0.92">
+    <circle cx="640" cy="210" r="92" fill="url(#coinSilver)"/>
+    <circle cx="640" cy="210" r="78" fill="none" stroke="#0B1120" stroke-opacity="0.22" stroke-width="6"/>
+    <path d="M610 220c22 18 78 18 100 0" stroke="#0B1120" stroke-opacity="0.2" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#softGlow)" opacity="0.75">
+    <circle cx="730" cy="270" r="62" fill="url(#coinSilver)"/>
+    <circle cx="730" cy="270" r="52" fill="none" stroke="#0B1120" stroke-opacity="0.2" stroke-width="5"/>
+  </g>
+</svg>
